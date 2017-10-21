@@ -1,2 +1,3 @@
 # React-Projects
-Simple React-Bootstrap implementation of API consumption
+
+ReactJS and Redux Web Apps
