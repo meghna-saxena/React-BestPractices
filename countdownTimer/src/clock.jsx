@@ -21,6 +21,12 @@ class Clock extends Component {
         this.getTimeUntil(this.props.deadline);
     }
 
+    componentDidMount() {
+        //this method runs after component has been completely rendered
+        //update tier every sec, by runiing code at specific interval (1000ms)
+        setInterval(() => this.getTimeUntil(this.props.deadline), 1000);
+    }
+
     getTimeUntil(deadline) {
         const time = Date.parse(deadline) - Date.parse(new Date());
         console.log('time', time);
