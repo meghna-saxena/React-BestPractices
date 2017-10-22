@@ -12,6 +12,14 @@ class Clock extends Component {
         }
         // console.log('this props', this.props);
     }
+    
+    componentWillMount() {
+        //this lifecycle method allows us to calculate the passed props data and current date
+        //before rendering on the screen
+
+        //once we have the data, update state of the application
+        this.getTimeUntil(this.props.deadline);
+    }
 
     getTimeUntil(deadline) {
         const time = Date.parse(deadline) - Date.parse(new Date());
@@ -25,11 +33,12 @@ class Clock extends Component {
         console.log('seconds', seconds,'minutes', minutes,'hours', hours, 'days', days);
     
         //update the state
-        this.setState({days: days});
+        // this.setState({days:days, hours:hours, minutes:minutes, seconds:seconds});
+        // use key:value shorthand syntax -
+        this.setState({days, hours, minutes, seconds});
       }
 
     render() {
-        this.getTimeUntil(this.props.deadline);
         return (
             <div>
                 <div className="Clock-days">{this.state.days} days</div>
