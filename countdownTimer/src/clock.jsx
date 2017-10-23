@@ -23,8 +23,20 @@ class Clock extends Component {
 
     componentDidMount() {
         //this method runs after component has been completely rendered
-        //update tier every sec, by runiing code at specific interval (1000ms)
+        //update timer every sec, by running code at specific interval (1000ms)
         setInterval(() => this.getTimeUntil(this.props.deadline), 1000);
+    }
+
+    //addeing a helper method to ensure equal spacing for timer
+    leadingZero(num) {
+        // if(num <10) {
+        //     return '0' + num;
+        // }
+        // return num;
+        // ======================================
+        // ===using ternary operators===
+        // ======================================
+        return num<10 ? '0' + num : num;
     }
 
     getTimeUntil(deadline) {
@@ -47,10 +59,10 @@ class Clock extends Component {
     render() {
         return (
             <div>
-                <div className="Clock-days">{this.state.days} days</div>
-                <div className="Clock-hours">{this.state.hours} hours</div>
-                <div className="Clock-minutes">{this.state.minutes} minutes</div>
-                <div className="Clock-seconds">{this.state.seconds} seconds</div>
+                <div className="Clock-days">{this.leadingZero(this.state.days)} days</div>
+                <div className="Clock-hours">{this.leadingZero(this.state.hours)} hours</div>
+                <div className="Clock-minutes">{this.leadingZero(this.state.minutes)} minutes</div>
+                <div className="Clock-seconds">{this.leadingZero(this.state.seconds)} seconds</div>
             </div>
         );
     }
