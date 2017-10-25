@@ -42,10 +42,10 @@ class App extends Component {
                 <div className="title">
                     Checklist App
                 </div>
-                <div className="form-inline">
+                <div className="form-inline reminder-form">
                     <div className="form-group">
                         <input className="form-control"
-                               placeholder="Write the upcoming tasks.."
+                               placeholder="Tasks.."
                                onChange={ event => this.setState({text: event.target.value}) }
                         />
                     </div>
