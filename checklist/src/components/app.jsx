@@ -19,6 +19,7 @@ class App extends Component {
     
 
     render() {
+        console.log('this.props', this.props);
         return (
             <div className="App">
                 <div className="title">
@@ -42,6 +43,13 @@ class App extends Component {
     }
 }
 
+function mapStateToProps(state) {
+    console.log('state', state);
+    return {
+        reminders: state
+    }
+}
+
 // since only addReminder action creator is connected instead of whole mapDispatchToProps
 // refactor the code by removing the following lines 
 
@@ -52,4 +60,4 @@ class App extends Component {
 // export default connect (null, mapDispatchToProps) (App);
 
 
-export default connect (null, {addReminder}) (App);
+export default connect (mapStateToProps, {addReminder}) (App);
