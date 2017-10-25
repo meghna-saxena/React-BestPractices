@@ -12,10 +12,10 @@ export default function(state = [], action) {
 
 	switch(action.type) {
         case ADD_REMINDER:
-        reminders = [...state, reminder(action)];
-        console.log('reminders as state', reminders);
-        return reminders;
-    default:
+            reminders = [...state, reminder(action)];
+            console.log('reminders as state', reminders);
+            return reminders;
+        default:
         return state;
     }
 }
