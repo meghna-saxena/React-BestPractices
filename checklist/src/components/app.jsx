@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { addReminder } from '../actions';
+// import { bindActionCreators } from 'redux';
 
 class App extends Component {
     constructor(props) {
@@ -10,7 +13,8 @@ class App extends Component {
 
     //helper function for btn onClick
     addReminder() {
-        console.log('this.state', this.state);
+        // console.log('this', this);
+        this.props.addReminder(this.state.text)
     }
     
 
@@ -38,4 +42,14 @@ class App extends Component {
     }
 }
 
-export default App;
+// since only addReminder action creator is connected instead of whole mapDispatchToProps
+// refactor the code by removing the following lines 
+
+// function mapDispatchToProps(dispatch) {
+//     return bindActionCreators({addReminder}, dispatch);
+// }
+
+// export default connect (null, mapDispatchToProps) (App);
+
+
+export default connect (null, {addReminder}) (App);
