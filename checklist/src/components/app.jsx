@@ -60,6 +60,9 @@ class App extends Component {
                                placeholder="Tasks.."
                                onChange={ event => this.setState({text: event.target.value}) }
                         />
+                        <input className="form-control"
+                               type="datetime-local"
+                        />
                     </div>
                     <button type="button" 
                             className="btn btn-success"
