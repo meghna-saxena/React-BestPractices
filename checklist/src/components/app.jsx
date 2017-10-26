@@ -18,8 +18,9 @@ class App extends Component {
     }
 
     deleteReminder(id) {
-        console.log('deleting in application', id);
-        console.log('this.props', this.props);
+        // console.log('deleting in application', id);
+        // console.log('this.props', this.props);
+        this.props.deleteReminder(id);
     }
 
     renderReminders() {
@@ -35,8 +36,9 @@ class App extends Component {
                             <div className="list-item">{reminder.text}</div>
                             <div className="list-item delete-button"
                                 onClick={() => this.deleteReminder(reminder.id)}>
-                                {/* Cross icon for delete */}
-                                X
+                                {/* X */}
+                                {/* unicode icon for delete */}
+                                &#x2715;
                             </div>
                         </li>
                     )

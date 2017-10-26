@@ -1,17 +1,20 @@
 import { ADD_REMINDER, DELETE_REMINDER } from './type';
 
-export function addReminder(text) {
-    console.log('action in addReminder', text);
-    return {
-        type: ADD_REMINDER,
-        payload: text
+export const addReminder = (text) => {
+    const action = {
+      type: ADD_REMINDER,
+    //text:text
+      text,
     }
-}
-
-export function deleteReminder(id) {
-    console.log('action in addReminder', id);
-    return {
-        type: DELETE_REMINDER,
-        payload: id
+    console.log('action in addReminder', action);
+    return action;
+  }
+  
+  export const deleteReminder = (id) => {
+    const action = {
+      type: DELETE_REMINDER,
+      id
     }
-}
+    console.log('deleting in actions', action);
+    return action;
+  }
