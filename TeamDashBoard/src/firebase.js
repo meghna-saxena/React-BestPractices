@@ -12,3 +12,6 @@ const config = {
   };
 
   export const firebaseApp = firebase.initializeApp(config);
+  
+//create name of key inside the firebase.database
+  export const goalRef = firebase.database().ref('goals');
