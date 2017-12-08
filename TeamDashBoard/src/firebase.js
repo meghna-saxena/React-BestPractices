@@ -15,3 +15,4 @@ const config = {
   
 //create name of key inside the firebase.database
   export const goalRef = firebase.database().ref('goals');
+  export const completeGoalRef = firebase.database().ref('completeGoals');
