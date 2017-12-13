@@ -12,11 +12,11 @@ class GoalList extends Component {
                 //let goalObject = goal.val();
                 //since goalObject has email & title
                 const { email, title } = goal.val();
-                // console.log('goalObject', goalObject);
+                const serverKey = goal.key;
                 // goals.push(goalObject); => rewrite
-                goals.push({ email, title });
-            })
-            console.log('goals', goals);
+                goals.push({ email, title, serverKey });
+                // console.log('goal', goal);
+            }) 
             this.props.setGoals(goals);
         })
     }
