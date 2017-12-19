@@ -1,22 +1,22 @@
 module.exports = {
-  entry: ['babel-polyfill', './src/index.js'],
+  entry: ["./src/index.js"],
   output: {
-    path: './build',
-    // if the above line does not work, try `path: __dirname + '/build'`
-    filename: 'bundle.js'
+    path: __dirname,
+    publicPath: "/",
+    filename: "bundle.js"
   },
   module: {
     loaders: [
       {
-        test: /\.js$/, // a regular expression that catches .js files
         exclude: /node_modules/,
-        loader: 'babel-loader'
+        loader: "babel"
       }
     ]
   },
+  resolve: {
+    extensions: ["", ".js", ".jsx"]
+  },
   devServer: {
-    port: 3000, // most common port
-    contentBase: './build',
-    inline: true
+    contentBase: "./"
   }
-}
+};

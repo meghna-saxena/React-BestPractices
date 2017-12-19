@@ -30,7 +30,7 @@ class App extends Component {
 
     render() {
         return (
-            <div>
+            <div className="container">
                 <h1>Dummy Text Generator</h1>
                 <Output value={this.state.text} /> 
             </div>
