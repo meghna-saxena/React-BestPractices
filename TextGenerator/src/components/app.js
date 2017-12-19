@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import Output from './output';
+import Text from './controls/text';
+import Select from './controls/select';
 import axios from 'axios';
 
 class App extends Component {
@@ -32,7 +34,18 @@ class App extends Component {
         return (
             <div className="container">
                 <h1>Dummy Text Generator</h1>
-                <Output value={this.state.text} /> 
+                <Output value={this.state.text} />
+                <h3>Real time options</h3>
+                <form>
+                    <div>
+                        <label>Paragraphs: </label>
+                        <Text value={this.state.paras} />
+                    </div>
+                    <div>
+                        <label>Include HTML: </label>
+                        <Select value={this.state.html} />
+                    </div>
+                </form> 
             </div>
         );
     }
