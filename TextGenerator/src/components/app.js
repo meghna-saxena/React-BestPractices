@@ -35,6 +35,10 @@ class App extends Component {
         this.setState({paras: number}, this.getText);
     }
 
+    showHtml(x) {
+        this.setState({html: x}, this.getText);
+    }
+
     render() {
         return (
             <div className="container">
@@ -48,7 +52,7 @@ class App extends Component {
                     </div>
                     <div>
                         <label>Include HTML: </label>
-                        <Select value={this.state.html} />
+                        <Select value={this.state.html} onChange={this.showHtml.bind(this)} />
                     </div>
                 </form> 
             </div>
