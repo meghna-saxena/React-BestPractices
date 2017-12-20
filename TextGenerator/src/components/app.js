@@ -30,6 +30,11 @@ class App extends Component {
         });
     }
 
+    changeParas(number) {
+        // console.log(number);
+        this.setState({paras: number}, this.getText);
+    }
+
     render() {
         return (
             <div className="container">
@@ -39,7 +44,7 @@ class App extends Component {
                 <form>
                     <div>
                         <label>Paragraphs: </label>
-                        <Text value={this.state.paras} />
+                        <Text value={this.state.paras} onChange={this.changeParas.bind(this)} />
                     </div>
                     <div>
                         <label>Include HTML: </label>
