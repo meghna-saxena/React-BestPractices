@@ -10,7 +10,7 @@ import reducer from './reducers';
 import SignIn from './components/signin';
 import SignUp from './components/signup';
 
-const store = createStore(reducer);
+const store = createStore(reducer, {}, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 firebaseApp.auth().onAuthStateChanged(user => {
     if(user) {
