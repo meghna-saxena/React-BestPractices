@@ -95,76 +95,45 @@
     "portfolio":{
       "projects": [
         {
-          "title":"Coffee Cup",
-          "description":"Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-          "category":"Illustrator",
-          "tags":"Branding, Web Design",
-          "image":"coffee.jpg",
-          "url":"http://port1.com",
+          "title":"Video Player",
+          "description":"React web app using youtube api to play a video without any promotions and ads.",
+          "category":"React.js",
+          "image":"videoplayer.png",
+          "url":"https://videoplayer-meghna.herokuapp.com/",
           "modal":"#modal-01"
         },
         {
-          "title":"Console",
-          "description":"Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-          "category":"Web Design",
-          "tags":"Branding, Web Development",
-          "image":"console.jpg",
-          "url":"http://port2.com",
+          "title":"Checklist",
+          "description":"Reminder/to-do app built by redux and react framework. React bootstrap styling to fetch date and time according to user input.",
+          "category":"React.js, Redux",
+          "image":"checklist.png",
+          "url":"https://react-checklist-app.herokuapp.com/",
           "modal":"#modal-02"
         },
         {
-          "title":"Judah",
-          "description":"Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-          "category":"Web Development",
-          "tags":"Branding, Web Programming",
-          "image":"judah.jpg",
-          "url":"http://port3.com",
+          "title":"Book Details",
+          "description":"A very simple app to fetch the book details data and render the infromation related to book list and currently active book selected by the user.",
+          "category":"React.js, Redux",
+          "image":"book-details.jpg",
+          "url":"https://booksdetail-library-meghna.herokuapp.com/",
           "modal":"#modal-03"
         },
         {
-          "title":"Into The Light",
-          "description":"Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-          "category":"Photography",
-          "tags":"Photography, Design",
-          "image":"into-the-light.jpg",
-          "url":"http://port4.com",
+          "title":"Blog Site",
+          "description":"A bloging site for creating, deleting, and showing the posts. Implemented the complete redux cycle of creating an action, passing it down to reducers and then changing the state which re-renders the component.",
+          "category":"Reactjs, Redux",
+          "image":"blog.png",
+          "url":"https://simpleblog-meghna.herokuapp.com/",
           "modal":"#modal-04"
         },
         {
-          "title":"Farmer Boy",
+          "title":"GroupApp",
           "description":"Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-          "category":"Branding",
+          "category":"React.js, Redux",
           "tags":"Branding, Web Design",
-          "image":"farmerboy.jpg",
-          "url":"http://port5.com",
+          "image":"team-dashboard.png",
+          "url":"https://react-team-dashboard.herokuapp.com/app",
           "modal":"#modal-05"
-        },
-        {
-          "title":"Girl",
-          "description":"Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-          "category":"Photography",
-          "tags":"Photography, Graphic Design",
-          "image":"girl.jpg",
-          "url":"http://port6.com",
-          "modal":"#modal-06"
-        },
-        {
-          "title":"Origami",
-          "description":"Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-          "category":"Illustration",
-          "tags":"Branding, Illustration",
-          "image":"origami.jpg",
-          "url":"http://port7.com",
-          "modal":"#modal-07"
-        },
-        {
-          "title":"Retrocam",
-          "description":"Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-          "category":"Web Development",
-          "tags":"Photography",
-          "image":"retrocam.jpg",
-          "url":"http://port8.com",
-          "modal":"#modal-08"
         }
       ]
     },
