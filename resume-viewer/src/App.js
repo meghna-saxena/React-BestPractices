@@ -38,7 +38,7 @@ class App extends Component {
     console.log(this.state.resumeData);
     return (
       <div className="App">
-        <Header />
+        <Header data={this.state.resumeData.main} />
         <About />
         <Resume />
         <Portfolio />
